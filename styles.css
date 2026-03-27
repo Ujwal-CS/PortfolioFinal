@@ -634,15 +634,16 @@ body.light-theme .project-link {
   display: grid;
   gap: 18px;
   justify-content: center;
+  justify-items: center;
 }
 
 .contact-card {
   display: flex;
   align-items: center;
   gap: 16px;
-  width: min(760px, 100%);
+  width: min(560px, 100%);
   border-radius: 22px;
-  padding: 22px;
+  padding: 18px 20px;
   text-decoration: none;
   text-align: left;
   margin: 0 auto;
@@ -836,5 +837,10 @@ body.light-theme .project-link {
   .education-card,
   .project-content {
     padding: 22px;
+  }
+
+  .contact-card {
+    width: 100%;
+    padding: 16px 18px;
   }
 }
