@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ujwal Kumar | Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio of Ujwal Kumar, a third-year Computing Science student focused on full-stack web development, accessible interfaces, and practical software projects."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress-bar" id="progress-bar"></div>
+
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+    <span id="theme-icon">☾</span>
+  </button>
+
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
+
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="#top">Ujwal Kumar</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+      </button>
+      <nav class="site-nav">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="container hero-content reveal">
+        <p class="hero-kicker">&lt;hello world /&gt;</p>
+        <h1>UJWAL<br />KUMAR</h1>
+        <p class="hero-role">
+          <span class="code-label">const role =</span>
+          <span class="code-value" id="typed-role"></span>
+        </p>
+        <p class="hero-location">Kamloops, British Columbia</p>
+
+        <div class="hero-actions">
+          <a class="primary-button" href="#projects">&lt; View Projects /&gt;</a>
+          <a class="secondary-button" href="#contact">{ Contact Me }</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">&lt;about /&gt;</p>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-photo reveal">
+            <div class="photo-frame">
+              <img src="profile.jpeg" alt="Portrait of Ujwal Kumar" />
+            </div>
+          </div>
+
+          <div class="about-copy reveal">
+            <p>
+              I am a third-year Bachelor of Computing Science student at Thompson Rivers University with a strong interest in
+              software development, full-stack web development, and user-centered design. I have developed a solid technical
+              foundation through academic coursework and hands-on experience building fully functional web applications using
+              Java, C, Python, JavaScript, HTML, CSS, SQL, and Firebase.
+            </p>
+            <p>
+              My experience includes developing responsive full-stack applications with client-side and server-integrated
+              functionality, authentication systems, database-backed architecture, interactive user interfaces, and
+              accessibility-focused design. I am currently seeking internship or co-op opportunities where I can contribute
+              to real-world teams, continue learning, and grow as a software developer.
+            </p>
+          </div>
+        </div>
+
+        <div class="stats-grid reveal">
+          <article class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Featured Projects</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-number">3rd</span>
+            <span class="stat-label">Year at TRU</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-number">2023</span>
+            <span class="stat-label">University Start</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tech-section" id="technologies">
+      <div class="container">
+        <div class="section-heading reveal center">
+          <p class="section-kicker">&lt;core technologies /&gt;</p>
+          <h2>Core Technologies</h2>
+          <p class="section-note">Technologies and technical areas I use across coursework and projects.</p>
+        </div>
+
+        <div class="pill-cloud reveal">
+          <span>Java</span>
+          <span>C</span>
+          <span>Python</span>
+          <span>JavaScript</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>SQL</span>
+          <span>Firebase</span>
+          <span>Firebase Authentication</span>
+          <span>Cloud Firestore</span>
+          <span>Arduino</span>
+          <span>Chart.js</span>
+          <span>jsPDF</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>Responsive Web Design</span>
+          <span>Accessibility</span>
+          <span>UI/UX Design</span>
+          <span>Database Systems</span>
+          <span>Computer Networks</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal center">
+          <p class="section-kicker">&lt;projects /&gt;</p>
+          <h2>Featured Projects</h2>
+          <p class="section-note">// Built through coursework, design thinking, and hands-on implementation</p>
+        </div>
+
+        <div class="carousel-shell reveal">
+          <button class="carousel-button left" id="project-prev" type="button" aria-label="Previous project">‹</button>
+
+          <div class="project-carousel" id="project-carousel">
+            <article class="project-slide active">
+              <div class="project-visual smart-home-visual">
+                <span>Accessibility + IoT</span>
+              </div>
+              <div class="project-content">
+                <h3>Smart Home Dashboard</h3>
+                <p>
+                  An accessibility-focused smart home system that connects a responsive web dashboard with Arduino hardware
+                  and Firebase for real-time control and monitoring.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Arduino</span><span>Firebase</span>
+                </div>
+                <div class="project-buttons">
+                  <button class="project-link" data-project="smart-home" type="button">More Information</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-slide">
+              <div class="project-visual expense-visual">
+                <span>Finance Dashboard</span>
+              </div>
+              <div class="project-content">
+                <h3>Expense Tracker</h3>
+                <p>
+                  A full-featured personal finance web application for transaction management, budget planning, chart-based
+                  analysis, and downloadable PDF reporting.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Chart.js</span><span>jsPDF</span>
+                </div>
+                <div class="project-buttons">
+                  <a class="project-visit" href="https://expense-tracker-final-kappa.vercel.app/" target="_blank" rel="noopener">Visit Website</a>
+                  <button class="project-link" data-project="expense-tracker" type="button">More Information</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-slide">
+              <div class="project-visual family-visual">
+                <span>Full-Stack Web App</span>
+              </div>
+              <div class="project-content">
+                <h3>FamilyVault</h3>
+                <p>
+                  A secure family archive web application with authentication, user-specific data handling, structured content
+                  modules, and a polished interface for long-term memory preservation.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase Auth</span><span>Firestore</span>
+                </div>
+                <div class="project-buttons">
+                  <a class="project-visit" href="https://familyvaultmain.web.app" target="_blank" rel="noopener">Visit Website</a>
+                  <button class="project-link" data-project="family-vault" type="button">More Information</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-button right" id="project-next" type="button" aria-label="Next project">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal center">
+          <p class="section-kicker">&lt;skills /&gt;</p>
+          <h2>Skills &amp; Expertise</h2>
+          <p class="section-note">&gt; technical foundations built through university coursework and applied development</p>
+        </div>
+
+        <div class="skills-modules">
+          <article class="skill-module reveal">
+            <h3>Programming</h3>
+            <ul>
+              <li><span>Java</span><span></span></li>
+              <li><span>C</span><span></span></li>
+              <li><span>Python</span><span></span></li>
+              <li><span>JavaScript</span><span></span></li>
+            </ul>
+          </article>
+
+          <article class="skill-module reveal">
+            <h3>Web Development</h3>
+            <ul>
+              <li><span>HTML</span><span></span></li>
+              <li><span>CSS</span><span></span></li>
+              <li><span>Responsive Design</span><span></span></li>
+              <li><span>Accessibility</span><span></span></li>
+            </ul>
+          </article>
+
+          <article class="skill-module reveal">
+            <h3>Data &amp; Platforms</h3>
+            <ul>
+              <li><span>SQL</span><span></span></li>
+              <li><span>Firebase</span><span></span></li>
+              <li><span>Cloud Firestore</span><span></span></li>
+              <li><span>Firebase Authentication</span><span></span></li>
+            </ul>
+          </article>
+
+          <article class="skill-module reveal">
+            <h3>Core CS</h3>
+            <ul>
+              <li><span>Data Structures</span><span></span></li>
+              <li><span>Algorithms</span><span></span></li>
+              <li><span>Software Architecture</span><span></span></li>
+              <li><span>Computer Networks</span><span></span></li>
+            </ul>
+          </article>
+
+          <article class="skill-module reveal">
+            <h3>Design &amp; Product</h3>
+            <ul>
+              <li><span>UI/UX Design</span><span></span></li>
+              <li><span>Human-Computer Interaction</span><span></span></li>
+              <li><span>Mobile App Development</span><span></span></li>
+              <li><span>Problem Solving</span><span></span></li>
+            </ul>
+          </article>
+
+          <article class="skill-module reveal">
+            <h3>Tools &amp; Others</h3>
+            <ul>
+              <li><span>Git</span><span></span></li>
+              <li><span>GitHub</span><span></span></li>
+              <li><span>Arduino</span><span></span></li>
+              <li><span>Chart.js / jsPDF</span><span></span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-heading reveal center">
+          <p class="section-kicker">&lt;education /&gt;</p>
+          <h2>Education</h2>
+          <p class="section-note">Academic foundation and continuing technical growth</p>
+        </div>
+
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <div class="education-icon">⌘</div>
+            <h3>Thompson Rivers University</h3>
+            <p class="education-degree">Bachelor of Computing Science</p>
+            <p class="education-meta">2023 - Present • Kamloops, BC</p>
+            <ul>
+              <li>Third-year Computing Science student</li>
+              <li>Coursework in programming, systems, databases, networking, HCI, and software design</li>
+              <li>Focused on full-stack web development and practical software engineering</li>
+            </ul>
+          </article>
+
+          <article class="education-card reveal">
+            <div class="education-icon">#</div>
+            <h3>Relevant Coursework</h3>
+            <p class="education-degree">Technical Areas</p>
+            <p class="education-meta">Course-based foundations</p>
+            <ul>
+              <li>Computer Programming and Programming Methods</li>
+              <li>Data Structures, Algorithms, and Intro to Computer Systems</li>
+              <li>Web Site Design, Mobile App Development, and Advanced Web Design</li>
+              <li>Software Architecture, Database Systems, Computer Networks, and Network Security</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal center">
+          <p class="section-kicker">&lt;contact /&gt;</p>
+          <h2>Let's Connect</h2>
+          <p class="section-note">Open to internships, co-op roles, and meaningful software projects</p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-cards reveal">
+            <button class="contact-card" id="contact-email" type="button">
+              <span class="contact-card-icon">✉</span>
+              <span>
+                <strong>Email</strong>
+                <small>Click to copy my email</small>
+              </span>
+            </button>
+
+            <a class="contact-card" href="https://www.linkedin.com/in/ujwal-kumar-263170249" target="_blank" rel="noopener">
+              <span class="contact-card-icon">in</span>
+              <span>
+                <strong>LinkedIn</strong>
+                <small>View my profile</small>
+              </span>
+            </a>
+
+            <div class="contact-card static">
+              <span class="contact-card-icon">⌂</span>
+              <span>
+                <strong>Location</strong>
+                <small>Kamloops, British Columbia</small>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+    <div class="project-modal-backdrop" data-close-modal></div>
+    <div class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="project-modal-close" id="modal-close" type="button" aria-label="Close project details">×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
